@@ -1,0 +1,46 @@
+{
+  "id": "/index.html",
+  "name": "maze-game",
+  "short_name": "maze-game",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fdfdfd",
+  "theme_color": "#db4938",
+  "orientation": "portrait-primary",
+"icons": [
+  {
+    "src": "./images/easy.png",
+    "type": "image/png", "sizes": "497x502"
+  },
+  {
+    "src": "./images/extreme.png",
+    "type": "image/png", "sizes": "502x499"
+  },
+  {
+    "src": "./images/hard.png",
+    "type": "image/png","sizes": "499x500"
+  },
+  {
+    "src": "./images/medium.png",
+    "type": "image/png", "sizes": "497x499"
+  },
+  {
+    "src": "./android.png",
+    "type": "image/png", "sizes": "144x144"
+  },
+ 
+  {
+    "src": "./maze.gif",
+    "type": "image/gif", "sizes": "482x482"
+  },
+ 
+  {
+    "src": "./pacman.png",
+    "type": "image/png", "sizes": "1200x1403"
+  },
+  {
+    "src": "./rat.png",
+    "type": "image/png", "sizes": "225x225"
+  }
+]
+}
