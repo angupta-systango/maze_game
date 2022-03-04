@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="level_wrapper">
+      <div class="row" >
+        <div class="col-md-12 text-center">
+            <span id="welcome_text" style="font-size: 22px; font-weight: bold;"></span>
+        </div><br><br>
+    </div>  
+      <div class="row" >
+            <div class="col-md-12 text-center">
+                <button class="btn btn-info" data-toggle="modal" data-target="#exampleModal"> View Leaderboard</button>
+            </div>
+        </div><br><br>
+
+        <div class="row" >
+            <div class="col-md-3 text-center">
+                <img width="200" height="200" src="./images/easy.png"><br><br>
+                <a href="game.html?difficulty=10" class="btn btn-primary"> Easy</a>
+            </div>
+            <div class="col-md-3 text-center">
+                <img width="200" height="200" src="./images/medium.png"><br><br>
+                <a href="game.html?difficulty=15" class="btn btn-primary"> Medium</a>
+            </div>
+            <div class="col-md-3 text-center">
+                <img width="200" height="200" src="./images/hard.png"><br><br>
+                <a href="game.html?difficulty=25" class="btn btn-primary"> Hard</a>
+            </div>
+            <div class="col-md-3 text-center">
+                <img width="200" height="200" src="./images/extreme.png"><br><br>   
+                <a href="game.html?difficulty=38" class="btn btn-primary"> Extreme</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+   
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-hover table-dark">
+  <thead>
+    <tr>
+      <th scope="col">s.no</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Score</th>
+    </tr>
+  </thead>
+  <tbody id="table_body">
+   
+  </tbody>
+</table>
+</div>
+</div>
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  </div>
+</div>
+
+
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script src="level.js"></script>
+</html>

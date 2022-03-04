@@ -1,0 +1,75 @@
+<html lang="en-GB"> 
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="./index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+  <body style="background-image: url('./wallpaper.jpg');">
+    <!-- Modal -->
+<div class="modal fade" id="success_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+            <center>
+              <div style="left: auto; right: auto; width: 48px; height: 48px; background-color: green; border-radius: 62px;" class="text-center"><i style="margin-top: 10px; color: white; font-size: 30px;" class="fa fa-check"></i></div>
+          </center>
+            <h3>Congratulations!</h3>
+            <p>You are done.</p>
+            <p id="moves"></p>
+            <a href="level.html" class="btn btn-primary">Go Back</a>
+      </div>
+  </div>
+  </div>
+</div>
+<div class="modal fade" id="failure_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body text-center">
+            <center>
+              <div style="left: auto; right: auto; width: 48px; height: 48px; background-color: red; border-radius: 62px;" class="text-center"><i style="margin-top: 10px; color: white; font-size: 30px;" class="fa fa-close"></i></div>
+          </center>
+            <h3>Ohh No!</h3>
+            <p>Better Luck For Next Time</p>
+            <p id="moves"></p>
+            <a href="level.html" class="btn btn-primary">Go Back</a>
+      </div>
+  </div>
+  </div>
+</div>
+    <div id="gradient"></div>
+    <div id="page" style="margin-top: 30px;">
+      
+      <div id="Loss-Message-Container">
+        <div id="message">
+          <h1>Ohh No!</h1>
+          <p>Better luck for next time.</p>
+          <p id="moves"></p>
+          <a href="level.html" class="btn btn-secondary">Go Back</a>
+        </div>
+      </div>
+      <div id="menu">
+        <div style="display: none;" class="custom-select">
+          <select id="diffSelect">
+                    <option value="10">Level 1</option>
+                    <option value="15">Level 2</option>
+                    <option value="25">Level 3</option>
+                    <option value="38">Level 4</option>                                      
+                </select>
+        </div>
+        <a href="level.html" class="btn btn-secondary">Go Back</a>
+      </div>
+      <div id="view" style="margin-top: 30px">
+        <div id="mazeContainer">
+          <canvas id="mazeCanvas" class="border" height="500" width="500"></canvas>
+        </div>
+      </div>
+    </div> 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+  </body>
+</html>
